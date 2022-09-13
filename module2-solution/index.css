@@ -33,10 +33,6 @@ p {
     padding-top: 25px;
     padding-bottom: 5px;
 }
-.col-lg-3 {
-    width: 31.5%;
-    float: left;
-}
 #chicken-div {
     background-color: darksalmon;
     font-weight: 500;
@@ -49,4 +45,26 @@ p {
 #sushi-div {
     background-color: bisque;
     font-weight: 500;
+}
+@media only screen and (min-width: 992px) {
+    .col-lg-4 {
+        width: 30%;
+        float: left;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .col-lg-4 {
+        width: 44%;
+        float: left;
+    }
+    .col-md-12 {
+        width: 90.5% !important;
+        float: left;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .col-lg-4 {
+        width: 100%;
+        float: left;
+    }
 }
